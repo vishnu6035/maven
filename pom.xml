@@ -1,0 +1,7 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>qt.devops</groupId>
+  <artifactId>spring-petclinic</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</project>
