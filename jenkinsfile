@@ -1,8 +1,8 @@
 node('build-test-maven') {
     stage('Source') { //Get the code
-        git 'git branch 'main', url 'https://github.com/vishnu6035/maven.git''
+        git 'https://github.com/GitPracticeRepo/java11-examples.git'
     }
     stage('Build') {//Compile the code and run unit tests and create package
-        sh 'mvn compile'
+        sh 'mvn clean package'
     }
 }
