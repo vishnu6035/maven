@@ -1,8 +1,8 @@
-node('build-test-maven'){
-    stage('source'){
-        git 'https://github.com/vishnu6035/maven.git''
+node('node1-label') {
+    stage('Source') { //Get the code
+        git 'https://github.com/vishnu6035/maven.git'
     }
-    stage('build'){
-        sh ' mvn clean package'
+    stage('Build') {//Compile the code and run unit tests and create package
+        sh 'mvn clean package'
     }
 }
