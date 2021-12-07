@@ -3,6 +3,6 @@ node('build-test-maven') {
         git 'https://github.com/vishnu6035/maven.git'
     }
     stage('Build') {//Compile the code and run unit tests and create package
-        sh 'mvn clean package'
+        sh 'mvn compile'
     }
 }
