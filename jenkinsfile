@@ -1,4 +1,4 @@
-node('node1-label') {
+node('build-test-maven') {
     stage('Source') { //Get the code
         git 'https://github.com/vishnu6035/maven.git'
     }
