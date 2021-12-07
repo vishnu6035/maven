@@ -1,6 +1,6 @@
 node('build-test-maven'){
     stage('source'){
-        git 'https://github.com/vishnu6035/maven.git'
+        git 'git branch: 'scripted', changelog: false, poll: false, url: 'https://github.com/vishnu6035/maven.git''
     }
     stage('build'){
         sh ' mvn clean package'
